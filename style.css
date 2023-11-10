@@ -34,11 +34,10 @@
 #home .home-cols .home-image-col img{
     background-color: black;
     border-radius: 15px;
-    filter: grayscale(100%);
-    transition: 1s;
+    filter: drop-shadow(0 0 0.75rem  crimson);
 }
 #home .home-cols .home-image-col img:hover{
-    filter: grayscale(0);
+    filter: drop-shadow(0 0 0.75rem  crimson);
 }
 #home .home-cols .home-info-col{
     padding-right:40px;
@@ -132,10 +131,10 @@
    background: linear-gradient(50deg, #1c99fe 20.69%, #145 50.19%,#fd47 79.69%);
     color: white;
 }
-/*#home .home-cols .home-menu-col .menu-item .active{
+/* #home .home-cols .home-menu-col .menu-item .active{
     background: linear-gradient(50deg, #1c99fe 20.69%, #145 50.19%,#fd47 79.69%);
     color: white;
-}*/
+} */
 /* --mobile view-- */
 @media only screen and (max-width:985px){
     #home .home-cols .home-menu-col{
@@ -155,6 +154,7 @@
     #home .home-cols .home-menu-col .menu-item{
         margin: 0 10px;
         position: relative;
+        display: none;
     }
     #home .home-cols .home-menu-col .menu-item a{
         background-color: rgb(42, 42, 148);
